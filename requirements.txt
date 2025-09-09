@@ -10,3 +10,4 @@ langchain-text-splitters
 langchain_qdrant
 python-dotenv
 pypdf
+langchain_openai

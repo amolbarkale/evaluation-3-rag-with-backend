@@ -28,7 +28,7 @@ embedding_models = OpenAIEmbeddings(
     model="text-embedding-3-large",
     openai_api_key=api_key
 )
-
+# ONLY RUN ONCE (during ingestion)
 vector_store = QdrantVectorStore.from_documents(
     documents=splitted_docs,
     embedding=embedding_models,
@@ -36,10 +36,3 @@ vector_store = QdrantVectorStore.from_documents(
     collection_name="text_collection"
 )
 
-# vector_store = QdrantVectorStore(
-#     embedding=embedding_models,
-#     url="http://localhost:6333",
-#     collection_name="text_collection"
-# )
-
-print("Ingestion DONE")
