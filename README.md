@@ -2,6 +2,7 @@
 
 setup docker for qdrant DB
 
+
 ```
 docker compose -f docker-compose.db.yml up -d
 ```
@@ -27,3 +28,8 @@ pip install -r requirements.txt
 
 fastapi dev main.py
 ```
+
+run http://localhost:8000/docs for fastapi 
+
+and ```/user-query``` with get method
+
