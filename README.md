@@ -8,7 +8,10 @@ docker compose -f docker-compose.db.yml up -d
 
 RAG
 ```
-python rag1.py
+python indexing.py
+
+python chat.py
+
 ```
 
 Once docker is up, You can see qdrant GUI at http://localhost:6333/dashboard
