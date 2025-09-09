@@ -16,6 +16,11 @@ app.add_middleware(
 async def root():
     return {"message": "Hello World"}
 
+@app.get("/user-query")
+async def answer(query: str):
+    #TODO: Add your code here to get the answer from the model
+    return {"answer": "Hello World"}
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
